@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="lstyle.css">
+</head>
+
+<body>
+
+    <div class="main-page">
+        <div class="navbar">
+            <div class="logo">
+                <h1>Library<span class="lib">4all</span></h1>
+            </div>
+            <div class="navbar-vertical" id="navt">
+                <nav class="nav">
+                    <ul class="ullist">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">latest</a></li>
+                        
+                    </ul>
+
+                </nav>
+                
+            </div>
+        </div>
+        <div class="menu-img" onclick="toggle()" id="mi"><img src="image/menu.png"></div>
+        <div class="mainrow">
+
+            <div class="main-content">
+                <h2>"A book is a dream that you hold in your hand."<br>-Neil Gaiman</h2>
+                <button class="searchInput">Live and learn and pass it on.</button>
+
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="latest-added">
+        <div class="heading">
+            <h1>All Books</h1>
+            <input type="text" class="searchInput" placeholder="Search Book Name" id="myInput">
+
+        </div>
+
+
+        <div class="latest-row" id="booknamesearch">
+            <div class="latest-col">
+                <div class="limg"><img src="image/c++ img.jpg"></div>
+                <div class="info">
+                    <h3>Learning The C++</h3>
+                    
+                    <button class="btnn" onclick="downloadPDF('https://drive.google.com/file/d/1KuNXQYemspTjebOOHLf3LmVWESfDv8SB/view?usp=sharing')">Download</button>
+                </div>
+            </div>
+            <!-- Add other book entries here -->
+            <div class="latest-col">
+                <div class="limg"><img src="image/python img.jpg"></div>
+                <div class="info">
+                    <h3>Python Programming</h3>
+                    
+                    <button class="btnn" onclick="downloadPDF('https://drive.google.com/file/d/1KuNXQYemspTjebOOHLf3LmVWESfDv8SB/view?usp=sharing')">Download</button>
+                </div>
+            </div>
+            <div class="latest-col">
+                <div class="limg"><img src="image/java img.jpg"></div>
+                <div class="info">
+                    <h3>Java Fundamentals</h3>
+                    
+                    <button class="btnn" onclick="downloadPDF('https://drive.google.com/file/d/1KuNXQYemspTjebOOHLf3LmVWESfDv8SB/view?usp=sharing')">Download</button>
+                </div>
+            </div>
+            <div class="latest-col">
+                <div class="limg"><img src="image/php img.jpg"></div>
+                <div class="info">
+                    <h3>PHP</h3>
+                    
+                    <button class="btnn" onclick="downloadPDF('https://drive.google.com/file/d/1KuNXQYemspTjebOOHLf3LmVWESfDv8SB/view?usp=sharing')">Download</button>
+                </div>
+            </div>
+
+            <div class="latest-col">
+                <div class="limg"><img src="image/c++ img.jpg"></div>
+                <div class="info">
+                    <h3>C++ Data Structures</h3>
+                    
+                    <button class="btnn" onclick="downloadPDF('https://drive.google.com/file/d/1KuNXQYemspTjebOOHLf3LmVWESfDv8SB/view?usp=sharing')">Download</button>
+                </div>
+            </div>
+            <div class="latest-col">
+                <div class="limg"><img src="image/m power of mind.jpg"></div>
+                <div class="info">
+                    <h3>DC hardware</h3>
+                    
+                    <button class="btnn" onclick="downloadPDF('https://drive.google.com/file/d/1KuNXQYemspTjebOOHLf3LmVWESfDv8SB/view?usp=sharing')">Download</button>
+                </div>
+            </div>
+            <div class="latest-col">
+                <div class="limg"><img src="image/linux img.jpg"></div>
+                <div class="info">
+                    <h3>Linus Fundamentals</h3>
+                    
+                    <button class="btnn" onclick="downloadPDF('https://drive.google.com/file/d/1KuNXQYemspTjebOOHLf3LmVWESfDv8SB/view?usp=sharing')">Download</button>
+                </div>
+            </div>
+            <div class="latest-col">
+                <div class="limg"><img src="image/c comic.jpg"></div>
+                <div class="info">
+                    <h3>Important Comic Book</h3>
+                    
+                    <button class="btnn" onclick="downloadPDF('https://drive.google.com/file/d/1KuNXQYemspTjebOOHLf3LmVWESfDv8SB/view?usp=sharing')">Download</button>
+                </div>
+            </div>
+            <div class="latest-col">
+                <div class="limg"><img src="image/c batmen.jpg"></div>
+                <div class="info">
+                    <h3>The Batman</h3>
+                    
+                    <button class="btnn" onclick="downloadPDF('https://drive.google.com/file/d/1KuNXQYemspTjebOOHLf3LmVWESfDv8SB/view?usp=sharing')">Download</button>
+                </div>
+            </div>
+            <div class="latest-col">
+                <div class="limg"><img src="image/m power of mind.jpg"></div>
+                <div class="info">
+                    <h3>Power of Mind Control</h3>
+                    
+                    <button class="btnn" onclick="downloadPDF('https://drive.google.com/file/d/1KuNXQYemspTjebOOHLf3LmVWESfDv8SB/view?usp=sharing')">Download</button>
+                </div>
+            </div>
+            <div class="latest-col">
+                <div class="limg"><img src="image/m focus on.jpg"></div>
+                <div class="info">
+                    <h3>Focus on Destiny</h3>
+                    
+                    <button class="btnn" onclick="downloadPDF('https://drive.google.com/file/d/1KuNXQYemspTjebOOHLf3LmVWESfDv8SB/view?usp=sharing')">Download</button>
+                </div>
+            </div>
+            <div class="latest-col">
+                <div class="limg"><img src="image/d how design makes.jpg"></div>
+                <div class="info">
+                    <h3>How design makes us to think</h3>
+                    
+                    <button class="btnn" onclick="downloadPDF('https://drive.google.com/file/d/1KuNXQYemspTjebOOHLf3LmVWESfDv8SB/view?usp=sharing')">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerdiv">
+            <hr>
+            <h5>Virtual classroom</h5>
+        </div>
+
+    </footer>
+
+    <script src="Freelibrary.js"></script>
+
+    <script>
+        function downloadPDF(url) {
+            window.open(url);
+        }
+    </script>
+
+</body>
+
+</html>
